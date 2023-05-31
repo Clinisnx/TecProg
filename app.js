@@ -3,10 +3,7 @@ const express = require('express');
 
 //Rotas (quando o servidor for acessado, pra onde ele vai?)
 
-const router = express.Router();
-router.get('/',(req, res)=>{ //primeira rota //função anônima //dois parametros
-    res.send('Olá Mundo 2021!');
-});
+const router = require('./routes/index');
 
 //configurações básicas do aplicativo
 const app = express();
